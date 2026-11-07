@@ -1,0 +1,49 @@
+{
+  "modelo": "pipeline_churn",
+  "version": "20261107005549",
+  "entrenado_en": "2026-11-07T00:55:49+00:00",
+  "pasos": [
+    "features",
+    "preprocesamiento",
+    "modelo"
+  ],
+  "columnas_entrada": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "mejores_hiperparametros": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 7,
+    "modelo": "HistGradientBoostingClassifier"
+  },
+  "metricas": {
+    "auc_cv": 0.8458,
+    "auc_test": 0.8482,
+    "accuracy_test": 0.7995,
+    "recall_test": 0.4925,
+    "f1_test": 0.5658
+  },
+  "versiones": {
+    "python": "3.14.4",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3"
+  }
+}
